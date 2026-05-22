@@ -1,22 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
 margin:0px;
 padding:0px;
 box-sizing: border-box;
 
 }
-container{
+.container{
     width: 100%;
     min-height: 100vh;
     background-color: white;
 }
-.container .title{ 
+.container .title{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
     font-size: 22px;
-    color: crimson;
+    color: rgb(8, 8, 8);
     letter-spacing: 1.5px;
     padding: 50px 0px;
 }
@@ -24,7 +25,7 @@ container{
     content:"";
     height:6px ;
     width: 100px;
-    background-color: crimson;
+    background-color: rgb(15, 0, 3);
     border-radius: 6px;
      position: relative;
      display: block;
@@ -40,8 +41,54 @@ container{
 .content .article{
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
     background-color: white;
-    padding :25px 25px
+    padding :25px 25px;
 }
+.content .article h2{
+    color: rgb(8, 8, 8);
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    
+} 
+.content .article p{
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: black;
+
+}
+.content .article a{
+    font-size: 22px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: rgb(15, 0, 3);
+    border-radius: 25px;
+    color: white;
+    border: 1px solid black;
+    letter-spacing: 1.5px;
+    margin-top:35px ;
+
+}
+.content .article a:hover{
+    background-color: transparent;
+    color: black;
+    transition: 0.2s ease;
+} 
+.image section{
+    width: 100%;
+    margin: auto;
+}
+.image -section img{
+    width: 100%;
+    height: auto;    
+}
+@media screen and (max-width: 900px){
+    
+    }
+
+
 
     
     
