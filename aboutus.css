@@ -1,0 +1,48 @@
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+
+}
+container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+.container .title{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: crimson;
+    letter-spacing: 1.5px;
+    padding: 50px 0px;
+}
+.container .title h1::after{
+    content:"";
+    height:6px ;
+    width: 100px;
+    background-color: crimson;
+    border-radius: 6px;
+     position: relative;
+     display: block;
+     margin: auto;
+    
+}
+.content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin: 30px auto;
+}
+.content .article{
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    padding :25px 25px
+}
+
+    
+    
+
