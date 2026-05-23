@@ -8,7 +8,7 @@ box-sizing: border-box;
 .container{
     width: 100%;
     min-height: 100vh;
-    background-color: white;
+    background-color: rgb(251, 249, 249);
 }
 .container .title{
     width: 100%;
@@ -40,11 +40,11 @@ box-sizing: border-box;
 }
 .content .article{
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-    background-color: white;
+    background-color: rgb(251, 251, 251);
     padding :25px 25px;
 }
 .content .article h2{
-    color: rgb(8, 8, 8);
+    color: rgb(251, 248, 248);
     font-size: 22px;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -84,8 +84,14 @@ box-sizing: border-box;
     width: 100%;
     height: auto;    
 }
-@media screen and (max-width: 900px){
-    
+@media screen and  (max-width: 900px){
+    .content{
+       grid-template-columns: repeat(1,1fr);
+
+    }
+    .article{
+        text-align: center;
+    }
     }
 
 
