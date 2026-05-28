@@ -1,0 +1,45 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fb7d7d;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #8a0808;
+} 
+
+iframe {
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(245, 6, 6, 0.1);
+    transition: transform 0.5s ease;
+    width: 560px;
+    height: 315px;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
+
+.class {
+    background-color: #fb7d7d;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
