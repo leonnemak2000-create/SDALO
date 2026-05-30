@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animal Quiz</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="style.css">
+
+     <nav class="navbar">
+        <div class="logo">Scientific Discoveries</div>
+        <ul class="nav-links">
+            <li><a href="Vertabrates.html">Vertabrates</a></li>
+            <li><a href="Invertabrates.html">Invertabrates</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="halo.html">Halo AI</a></li>
+            <li><a href="Images/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+<h1>Animal Biology Quiz</h1>
+
+<p>1. What type of skin do reptiles have?</p>
+<input type="radio" name="q1" value="0"> Wet skin<br>
+<input type="radio" name="q1" value="1"> Dry, scaly skin<br>
+<input type="radio" name="q1" value="0"> Fur<br>
+
+<p>2. Which animal is the largest mammal in the world?</p>
+<input type="radio" name="q2" value="0"> Elephant<br>
+<input type="radio" name="q2" value="1"> Blue Whale<br>
+<input type="radio" name="q2" value="0"> Shark<br>
+
+<p>3. What do fish use to breathe?</p>
+<input type="radio" name="q3" value="0"> Lungs<br>
+<input type="radio" name="q3" value="1"> Gills<br>
+<input type="radio" name="q3" value="0"> Skin<br>
+
+<p>4. Which bird can fly backward?</p>
+<input type="radio" name="q4" value="0"> Eagle<br>
+<input type="radio" name="q4" value="0"> Penguin<br>
+<input type="radio" name="q4" value="1"> Hummingbird<br>
+
+<p>5. What are examples of amphibians?</p>
+<input type="radio" name="q5" value="1"> Frogs and salamanders<br>
+<input type="radio" name="q5" value="0"> Lions and tigers<br>
+<input type="radio" name="q5" value="0"> Sharks and whales<br>
+
+<p>6. Which arthropod uses silk to make webs?</p>
+<input type="radio" name="q6" value="0"> Crab<br>
+<input type="radio" name="q6" value="1"> Spider<br>
+<input type="radio" name="q6" value="0"> Ant<br>
+
+<p>7. What protects many mollusks?</p>
+<input type="radio" name="q7" value="0"> Fur<br>
+<input type="radio" name="q7" value="1"> Shells<br>
+<input type="radio" name="q7" value="0"> Feathers<br>
+
+<p>8. How do sponges get food?</p>
+<input type="radio" name="q8" value="0"> Hunting fish<br>
+<input type="radio" name="q8" value="1"> Filtering water<br>
+<input type="radio" name="q8" value="0"> Eating plants<br>
+
+<p>9. What helps earthworms make soil healthy?</p>
+<input type="radio" name="q9" value="1"> Breaking down dead plants<br>
+<input type="radio" name="q9" value="0"> Flying<br>
+<input type="radio" name="q9" value="0"> Hunting insects<br>
+
+<p>10. Which reptile can change color?</p>
+<input type="radio" name="q10" value="0"> Crocodile<br>
+<input type="radio" name="q10" value="1"> Chameleon<br>
+<input type="radio" name="q10" value="0"> Turtle<br>
+
+<br><br>
+
+<button onclick="checkScore()">Submit Quiz</button>
+
+<h2 id="result"></h2>
+
+<script>
+function checkScore() {
+
+let score = 0;
+
+let q1 = document.querySelector('input[name="q1"]:checked');
+let q2 = document.querySelector('input[name="q2"]:checked');
+let q3 = document.querySelector('input[name="q3"]:checked');
+let q4 = document.querySelector('input[name="q4"]:checked');
+let q5 = document.querySelector('input[name="q5"]:checked');
+let q6 = document.querySelector('input[name="q6"]:checked');
+let q7 = document.querySelector('input[name="q7"]:checked');
+let q8 = document.querySelector('input[name="q8"]:checked');
+let q9 = document.querySelector('input[name="q9"]:checked');
+let q10 = document.querySelector('input[name="q10"]:checked');
+
+if(q1) score += Number(q1.value);
+if(q2) score += Number(q2.value);
+if(q3) score += Number(q3.value);
+if(q4) score += Number(q4.value);
+if(q5) score += Number(q5.value);
+if(q6) score += Number(q6.value);
+if(q7) score += Number(q7.value);
+if(q8) score += Number(q8.value);
+if(q9) score += Number(q9.value);
+if(q10) score += Number(q10.value);
+
+document.getElementById("result").innerHTML =
+"Your score is " + score + "/10";
+
+}
+</script>
+
+</body>
+</html>
