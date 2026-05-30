@@ -1,16 +1,13 @@
-/* ==========================================
-   1. GLOBAL STYLES (Merged Body Styles)
-   ========================================== */
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f4f4; /* Keeps original light gray layout background */
+    background: #f4f4f4; 
     color: #222;
 }
 
-/* ==========================================
-   2. HEADER & NAVIGATION
-   ========================================== */
+
 .navbar {
     background: #d71920;
     color: white;
@@ -45,9 +42,7 @@ body {
     text-decoration: underline;
 }
 
-/* ==========================================
-   3. HERO SECTION
-   ========================================== */
+
 .hero {
     background: linear-gradient(rgba(215,25,32,0.9), rgba(215,25,32,0.75)), url('') center/cover no-repeat;
     color: white;
@@ -84,9 +79,7 @@ body {
     background: #f2f2f2;
 }
 
-/* ==========================================
-   4. LAYOUT SECTIONS & CARDS
-   ========================================== */
+
 .section {
     padding: 50px 20px;
 }
@@ -144,16 +137,14 @@ body {
     font-size: 22px;
 }
 
-/* ==========================================
-   5. NEW: INTEGRATED VIDEO & CONTAINER STYLES
-   ========================================== */
+
 h2 {
     margin: 20px 0;
-    color: #8a0808; /* Dark red style for video headers */
+    color: #8a0808; 
     text-align: center;
 } 
 
-/* Targets your video section wrapper directly */
+
 .videos, .container {
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +154,7 @@ h2 {
     padding: 20px;
 }
 
-/* Responsive embedded videos with clean hover effects */
+
 iframe {
     margin: 10px;
     border: none;
@@ -171,7 +162,7 @@ iframe {
     box-shadow: 0 4px 6px rgba(245, 6, 6, 0.1);
     transition: transform 0.5s ease;
     width: 100%;
-    max-width: 560px; /* Safe standard video sizing */
+    max-width: 560px; 
     height: 315px;
 }
 
